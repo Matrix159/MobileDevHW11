@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cis.gvsu.edu.geocalculator.MainActivity">
+
+    <EditText
+        android:id="@+id/p1Lat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Enter latitude for p1"
+        android:inputType="numberSigned|numberDecimal"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"/>
+
+    <EditText
+        android:id="@+id/p1Lng"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Enter longitude for p1"
+        android:inputType="numberSigned|numberDecimal"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"/>
+
+    <EditText
+        android:id="@+id/p2Lat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Enter latitude for p2"
+        android:inputType="numberSigned|numberDecimal"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/p1Lat"
+        app:layout_constraintRight_toRightOf="@+id/p1Lat"
+        app:layout_constraintTop_toBottomOf="@+id/p1Lat"/>
+
+    <EditText
+        android:id="@+id/p2Lng"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Enter longitude for p2"
+        android:inputType="numberSigned|numberDecimal"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/p1Lng"
+        app:layout_constraintRight_toRightOf="@+id/p1Lng"
+        app:layout_constraintTop_toBottomOf="@+id/p1Lng"/>
+
+    <Button
+        android:id="@+id/calc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Calculate"
+        app:layout_constraintLeft_toLeftOf="@+id/p1Lat"
+        app:layout_constraintTop_toBottomOf="@+id/p2Lat"/>
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Clear"
+        app:layout_constraintRight_toRightOf="@+id/p1Lng"
+        app:layout_constraintTop_toBottomOf="@+id/p2Lng"/>
+
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Distance:"
+        app:layout_constraintLeft_toLeftOf="@+id/p1Lat"
+        app:layout_constraintRight_toRightOf="@+id/p1Lng"
+        app:layout_constraintTop_toBottomOf="@+id/calc"
+        tools:layout_constraintLeft_creator="1"/>
+
+    <TextView
+        android:id="@+id/bearing"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Bearing:"
+        app:layout_constraintLeft_toLeftOf="@+id/p1Lat"
+        app:layout_constraintRight_toRightOf="@+id/p1Lng"
+        app:layout_constraintTop_toBottomOf="@+id/distance"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="192dp"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tired of typing?"
+        app:layout_constraintRight_toLeftOf="@+id/search_button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintBaseline_toBaselineOf="@+id/search_button"/>
+
+    <Button
+        android:id="@+id/search_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Search"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toRightOf="@+id/textView"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>

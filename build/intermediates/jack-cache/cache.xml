@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Eldridge\AppData\Local\Android\sdk\platforms\android-25\android.jar"
+        revision="25.0.1"
+        sha1="712a0312fe844a21a1b3812fa960c363a1578984">
+        <dex dex="F:\Dropbox\CIS 357\MobileDevAndroid10\app\build\intermediates\transforms\preJackRuntimeLibraries\debug\jars\8000\40\android-a299c2ac7a73475b2b6e0f7708adeda7d87279af.jar" />
+    </item>
+    <item
+        jar="C:\Users\Eldridge\AppData\Local\Android\sdk\platforms\android-25\optional\org.apache.http.legacy.jar"
+        revision="25.0.1"
+        sha1="5f0541a4298daa0590b22cfbde43f85e2a675545">
+        <dex dex="F:\Dropbox\CIS 357\MobileDevAndroid10\app\build\intermediates\transforms\preJackRuntimeLibraries\debug\jars\8000\40\org.apache.http.legacy-9f3f6cd19397620a10e17381bd05d7d30ca46fce.jar" />
+    </item>
+
+</items>

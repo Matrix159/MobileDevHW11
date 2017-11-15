@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "152969847983",
+    "firebase_url": "https://mobiledevhw11.firebaseio.com",
+    "project_id": "mobiledevhw11",
+    "storage_bucket": "mobiledevhw11.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:152969847983:android:ca382a209ade0f96",
+        "android_client_info": {
+          "package_name": "cis.gvsu.edu.geocalculator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "152969847983-jsnqiae89h5427j7ijh0v3hbpp0r2dpp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4HBmRJrLbDO07fyYi_j-qEvQTwYXZziw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
